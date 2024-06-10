@@ -41,7 +41,7 @@ function preload(){
 
 function setup() {
   createCanvas(600, 400);
-  trilha.loop();
+ // trilha.loop();
 }
 
 function draw() {
@@ -114,7 +114,7 @@ function verificaColisaoRaquete(x, y) {
   colidiu = collideRectCircle(x,y,wRaquete,hRaquete,xBolinha,yBolinha,raio);
   if (colidiu) {
     velocidadeXBolinha *= -1;
-    raquetada.play();
+   // raquetada.play();
   }
 }
 
@@ -134,11 +134,11 @@ function mostrarPlacar() {
 function pontuação() {
   if (xBolinha > 590) {
     meusPontos += 1;
-    ponto.play();
+    //ponto.play();
   }
 
   if (xBolinha < 10 ) {
     pontosOponente += 1;
-    ponto.play();
+    //ponto.play();
   }
 }
